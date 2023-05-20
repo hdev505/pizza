@@ -9,5 +9,8 @@ import PasswordRecovery from "./passRecovery/PasswordRecovery";
 import Payment from "./payment/Payment";
 import Register from './registration/Register';
 import SingleItem from './singleItem/SingleItem';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export { About, Blog, Cart, Checkout, Contact, RootSection, Menu, PasswordRecovery, Payment, Register, SingleItem };
